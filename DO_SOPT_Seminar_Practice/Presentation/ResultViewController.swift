@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ResultViewController: UIViewController {
+final class ResultViewController: UIViewController {
     
     var delegate: GetDataProtocol?
     var loginDataCompletion: (([String]) -> Void)? //스트링 타입의 배열을 매개변수로 전달 할거고, 리턴타입은 void다!
@@ -31,19 +31,19 @@ class ResultViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func setStyle() {
+    private func setStyle() {
         setBackButton()
         setEmailLabel()
         setCharacter()
     }
     
-    func setBackButton() {
+    private func setBackButton() {
         backButton.backgroundColor = .systemYellow
         backButton.titleLabel?.textColor = .black
         backButton.layer.cornerRadius = 5
     }
     
-    func setEmailLabel() {
+    private func setEmailLabel() {
         emailLabel.font = .systemFont(ofSize: 20)
         emailLabel.numberOfLines = 0
         emailLabel.setLineSpacing(spacing: 3)
@@ -53,7 +53,7 @@ class ResultViewController: UIViewController {
         emailLabel.layer.cornerRadius = 5
     }
     
-    func setCharacter() {
+    private func setCharacter() {
         character.image = UIImage(named: "chunsik")
     }
     
@@ -67,15 +67,4 @@ class ResultViewController: UIViewController {
         guard let loginDataCompletion else {return}
         loginDataCompletion([self.email])
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }

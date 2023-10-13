@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class LoginViewController: UIViewController {
     
     @IBOutlet var idTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         setStyle()
     }
     
-    func setStyle() {
+    private func setStyle() {
         setDescriptionLabel()
         setIdTextField()
         setPasswordTextField()
@@ -40,11 +40,11 @@ class ViewController: UIViewController {
         setFindPasswordLabel()
     }
     
-    func setDescriptionLabel() {
+    private func setDescriptionLabel() {
         descriptionLabel.font = .systemFont(ofSize: 33)
     }
     
-    func setIdTextField() {
+    private func setIdTextField() {
         let border = CALayer()
         border.frame = CGRect(x: 0, y: idTextField.frame.size.height + 3, width: idTextField.frame.width, height: 1)
         border.backgroundColor = UIColor.systemGray3.cgColor
@@ -56,7 +56,7 @@ class ViewController: UIViewController {
         idTextField.clearButtonMode = .whileEditing // clearButton
     }
     
-    func setPasswordTextField() {
+    private func setPasswordTextField() {
         let border = CALayer()
         border.frame = CGRect(x: 0, y: passwordTextField.frame.size.height + 3, width: passwordTextField.frame.width, height: 1)
         border.backgroundColor = UIColor.systemGray3.cgColor
@@ -69,7 +69,7 @@ class ViewController: UIViewController {
         passwordTextField.isSecureTextEntry = true // 비밀번호 숨김
     }
     
-    func setLoginCheckButton() {
+    private func setLoginCheckButton() {
         loginCheckButton.backgroundColor = .systemYellow
         loginCheckButton.layer.cornerRadius = 11
         // 이미지 크기 줄여서 사용
@@ -78,23 +78,23 @@ class ViewController: UIViewController {
         loginCheckButton.setImage(resizedImage, for: .normal)
     }
     
-    func setLoginButton() {
+    private func setLoginButton() {
         loginButton.backgroundColor = .systemYellow
         loginButton.titleLabel?.textColor = .black
         loginButton.layer.cornerRadius = 5
     }
     
-    func setJoinLabel() {
+    private func setJoinLabel() {
         joinLabel.font = .systemFont(ofSize: 13)
         joinLabel.textColor = .black
     }
     
-    func setAccoutLabel() {
+    private func setAccoutLabel() {
         accoutLabel.font = .systemFont(ofSize: 13)
         accoutLabel.textColor = .black
     }
     
-    func setFindPasswordLabel() {
+    private func setFindPasswordLabel() {
         findPasswordLabel.font = .systemFont(ofSize: 13)
         findPasswordLabel.textColor = .black
     }
@@ -111,7 +111,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func pushToResultVC() {
+    private func pushToResultVC() {
         guard let resultVC = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {return}
         resultVC.email = idText
         resultVC.delegate = self
@@ -122,7 +122,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: GetDataProtocol {
+extension LoginViewController: GetDataProtocol {
     func getLoginData(email: String) {
         print("받아온 email : \(email)")
     }
