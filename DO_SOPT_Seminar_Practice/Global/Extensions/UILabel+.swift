@@ -8,6 +8,7 @@
 import UIKit
 
 extension UILabel {
+    // 두 줄 사이의 간격을 조정하는 함수
     func setLineSpacing(spacing: CGFloat) {
         guard let text = text else { return }
 
