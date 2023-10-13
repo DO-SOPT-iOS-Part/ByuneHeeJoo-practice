@@ -13,6 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
     
     @IBOutlet var loginCheckButton: UIButton!
+    @IBOutlet var loginButton: UIButton!
+    
+    @IBOutlet var joinLabel: UILabel!
+    @IBOutlet var accoutLabel: UILabel!
+    @IBOutlet var findPasswordLabel: UILabel!
     
     private var idText: String = ""
     private var passwordText: String = ""
@@ -29,6 +34,10 @@ class ViewController: UIViewController {
         setIdTextField()
         setPasswordTextField()
         setLoginCheckButton()
+        setLoginButton()
+        setJoinLabel()
+        setAccoutLabel()
+        setFindPasswordLabel()
     }
     
     func setDescriptionLabel() {
@@ -60,9 +69,33 @@ class ViewController: UIViewController {
     }
     
     func setLoginCheckButton() {
-        loginCheckButton.backgroundColor = .yellow
+        loginCheckButton.backgroundColor = .systemYellow
         loginCheckButton.layer.cornerRadius = 11
-        loginCheckButton.setImage(UIImage(named: "checkMark"), for: .normal)
+        // 이미지 크기 줄여서 사용
+        let imageSize = CGSize(width: 17, height: 17)
+        let resizedImage = UIImage(named: "checkMark")?.resize(targetSize: imageSize)
+        loginCheckButton.setImage(resizedImage, for: .normal)
+    }
+    
+    func setLoginButton() {
+        loginButton.backgroundColor = .systemYellow
+        loginButton.titleLabel?.textColor = .black
+        loginButton.layer.cornerRadius = 5
+    }
+    
+    func setJoinLabel() {
+        joinLabel.font = .systemFont(ofSize: 13)
+        joinLabel.textColor = .black
+    }
+    
+    func setAccoutLabel() {
+        accoutLabel.font = .systemFont(ofSize: 13)
+        accoutLabel.textColor = .black
+    }
+    
+    func setFindPasswordLabel() {
+        findPasswordLabel.font = .systemFont(ofSize: 13)
+        findPasswordLabel.textColor = .black
     }
     
     @IBAction func loginButtonTap(_ sender: Any) {
