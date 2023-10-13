@@ -56,7 +56,7 @@ final class LoginViewController: UIViewController {
     
     private func setIdTextField() {
         let border = CALayer()
-        border.frame = CGRect(x: 0, y: idTextField.frame.size.height + 3, width: idTextField.frame.width, height: 1)
+        border.frame = CGRect(x: 0, y: idTextField.frame.size.height + 3, width: idTextField.frame.width - 3, height: 1)
         border.backgroundColor = UIColor.systemGray3.cgColor
         idTextField.layer.addSublayer((border))
         idTextField.textAlignment = .left
@@ -68,7 +68,7 @@ final class LoginViewController: UIViewController {
     
     private func setPasswordTextField() {
         let border = CALayer()
-        border.frame = CGRect(x: 0, y: passwordTextField.frame.size.height + 3, width: passwordTextField.frame.width, height: 1)
+        border.frame = CGRect(x: 0, y: passwordTextField.frame.size.height + 3, width: passwordTextField.frame.width - 3, height: 1)
         border.backgroundColor = UIColor.systemGray3.cgColor
         passwordTextField.layer.addSublayer((border))
         passwordTextField.textAlignment = .left
