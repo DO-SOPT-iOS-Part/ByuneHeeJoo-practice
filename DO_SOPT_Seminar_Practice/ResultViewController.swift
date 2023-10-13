@@ -11,24 +11,46 @@ class ResultViewController: UIViewController {
     
     var delegate: GetDataProtocol?
     var loginDataCompletion: (([String]) -> Void)? //스트링 타입의 배열을 매개변수로 전달 할거고, 리턴타입은 void다!
-    
     @IBOutlet var emailLabel: UILabel!
-    @IBOutlet var passwordLabel: UILabel!
+    @IBOutlet var backButton: UIButton!
+
+    @IBOutlet var character: UIImageView!
     
     var email: String = ""
-    var password: String = ""
     
     private func bindText() {
-        self.emailLabel.text = "email : \(email)"
-        self.passwordLabel.text = "password : \(password)"
+        self.emailLabel.text = "\(email)님\n 환영합니다."
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        bindText()
         self.navigationController?.isNavigationBarHidden = true
+
+        bindText()
+        setStyle()
         // Do any additional setup after loading the view.
+    }
+    
+    func setStyle() {
+        setBackButton()
+        setEmailLabel()
+        setCharacter()
+    }
+    
+    func setBackButton() {
+        backButton.backgroundColor = .systemYellow
+        backButton.titleLabel?.textColor = .black
+        backButton.layer.cornerRadius = 5
+    }
+    
+    func setEmailLabel() {
+        emailLabel.numberOfLines = 2
+        emailLabel.textAlignment = .center
+        emailLabel.font = .systemFont(ofSize: 20)
+    }
+    
+    func setCharacter() {
+        character.image = UIImage(named: "chunsik")
     }
     
     @IBAction func backButtonTap(_ sender: Any) {
@@ -37,9 +59,9 @@ class ResultViewController: UIViewController {
         } else {
             self.dismiss(animated: true)
         }
-        delegate?.getLoginData(email: self.email, password: self.password)
+        delegate?.getLoginData(email: self.email)
         guard let loginDataCompletion else {return}
-        loginDataCompletion([self.email, self.password])
+        loginDataCompletion([self.email])
     }
     
     /*
