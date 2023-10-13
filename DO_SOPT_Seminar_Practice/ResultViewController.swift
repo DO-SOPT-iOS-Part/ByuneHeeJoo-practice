@@ -19,7 +19,7 @@ class ResultViewController: UIViewController {
     var email: String = ""
     
     private func bindText() {
-        self.emailLabel.text = "\(email)님\n 환영합니다."
+        self.emailLabel.text = "\(email) 님\n 환영합니다."
     }
     
     override func viewDidLoad() {
@@ -44,9 +44,13 @@ class ResultViewController: UIViewController {
     }
     
     func setEmailLabel() {
-        emailLabel.numberOfLines = 2
-        emailLabel.textAlignment = .center
         emailLabel.font = .systemFont(ofSize: 20)
+        emailLabel.numberOfLines = 0
+        emailLabel.setLineSpacing(spacing: 3)
+        emailLabel.textAlignment = .center
+        emailLabel.layer.borderColor = UIColor.systemYellow.cgColor
+        emailLabel.layer.borderWidth = 2
+        emailLabel.layer.cornerRadius = 5
     }
     
     func setCharacter() {

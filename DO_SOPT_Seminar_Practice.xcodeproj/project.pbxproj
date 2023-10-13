@@ -14,6 +14,7 @@
 		2A01E26A2AD12A59003FF38C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A01E2692AD12A59003FF38C /* Assets.xcassets */; };
 		2A01E26D2AD12A59003FF38C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A01E26B2AD12A59003FF38C /* LaunchScreen.storyboard */; };
 		2A5E993E2AD8E38F00DA55A1 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E993D2AD8E38F00DA55A1 /* UIImage+.swift */; };
+		2A5E99422AD90A5700DA55A1 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E99412AD90A5700DA55A1 /* UILabel+.swift */; };
 		2AC155342AD135E60010C087 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC155332AD135E60010C087 /* ResultViewController.swift */; };
 		2AC155362AD141EB0010C087 /* GetDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC155352AD141EB0010C087 /* GetDataProtocol.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		2A01E26C2AD12A59003FF38C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A01E26E2AD12A59003FF38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A5E993D2AD8E38F00DA55A1 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		2A5E99412AD90A5700DA55A1 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 		2AC155332AD135E60010C087 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		2AC155352AD141EB0010C087 /* GetDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDataProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				2A5E993D2AD8E38F00DA55A1 /* UIImage+.swift */,
+				2A5E99412AD90A5700DA55A1 /* UILabel+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				2A01E2652AD12A58003FF38C /* ViewController.swift in Sources */,
 				2A01E2612AD12A58003FF38C /* AppDelegate.swift in Sources */,
 				2A5E993E2AD8E38F00DA55A1 /* UIImage+.swift in Sources */,
+				2A5E99422AD90A5700DA55A1 /* UILabel+.swift in Sources */,
 				2A01E2632AD12A58003FF38C /* SceneDelegate.swift in Sources */,
 				2AC155342AD135E60010C087 /* ResultViewController.swift in Sources */,
 			);

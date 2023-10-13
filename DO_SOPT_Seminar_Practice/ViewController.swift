@@ -19,9 +19,9 @@ class ViewController: UIViewController {
     @IBOutlet var accoutLabel: UILabel!
     @IBOutlet var findPasswordLabel: UILabel!
     
-    private var idText: String = ""
-    
     @IBOutlet var descriptionLabel: UILabel!
+    
+    private var idText: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
         idTextField.textColor = UIColor.black
         idTextField.placeholder = "카카오메일 아이디, 이메일, 전화번호"
         idTextField.font = .systemFont(ofSize: 17)
-
+        idTextField.clearButtonMode = .whileEditing // clearButton
     }
     
     func setPasswordTextField() {
@@ -65,7 +65,8 @@ class ViewController: UIViewController {
         passwordTextField.textColor = UIColor.black
         passwordTextField.placeholder = "비밀번호"
         passwordTextField.font = .systemFont(ofSize: 17)
-
+        passwordTextField.clearButtonMode = .whileEditing // clearButton
+        passwordTextField.isSecureTextEntry = true // 비밀번호 숨김
     }
     
     func setLoginCheckButton() {
