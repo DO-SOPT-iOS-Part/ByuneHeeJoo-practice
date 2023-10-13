@@ -18,6 +18,7 @@ final class ResultViewController: UIViewController {
     
     var email: String = ""
     
+    // 이전 뷰컨에서 받아온 정보 적용
     private func bindText() {
         self.emailLabel.text = "\(email) 님\n 환영합니다."
     }
@@ -28,9 +29,9 @@ final class ResultViewController: UIViewController {
 
         bindText()
         setStyle()
-        // Do any additional setup after loading the view.
     }
     
+    // UI 컴포넌트 설정
     private func setStyle() {
         setBackButton()
         setEmailLabel()
@@ -57,6 +58,7 @@ final class ResultViewController: UIViewController {
         character.image = UIImage(named: "chunsik")
     }
     
+    // backButton 눌렀을 때
     @IBAction func backButtonTap(_ sender: Any) {
         if let navigationController = self.navigationController {
             navigationController.popViewController(animated: true)

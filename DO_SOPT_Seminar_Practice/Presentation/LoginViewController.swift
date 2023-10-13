@@ -25,10 +25,20 @@ final class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
         setStyle()
     }
     
+    // 다음뷰로 넘어가면 기존 뷰 초기화 설정
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        idTextField.text = ""
+        passwordTextField.text = ""
+        idTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+    }
+    
+    // UI 컴포넌트 설정
     private func setStyle() {
         setDescriptionLabel()
         setIdTextField()
@@ -99,11 +109,13 @@ final class LoginViewController: UIViewController {
         findPasswordLabel.textColor = .black
     }
     
+    // loginButton 눌렀을 때
     @IBAction func loginButtonTap(_ sender: Any) {
         print("\(idText)\n")
         pushToResultVC()
     }
     
+    // 이메일 입력할 때
     @IBAction func didLoginTextFieldEditing(_ sender: Any) {
         guard let textField = sender as? UITextField else {return}
         if let idText = textField.text {
@@ -111,6 +123,7 @@ final class LoginViewController: UIViewController {
         }
     }
     
+    // 다음뷰컨으로 push
     private func pushToResultVC() {
         guard let resultVC = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {return}
         resultVC.email = idText

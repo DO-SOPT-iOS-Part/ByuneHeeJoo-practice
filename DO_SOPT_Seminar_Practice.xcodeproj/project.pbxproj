@@ -113,8 +113,8 @@
 		2A5E99462AD90CF400DA55A1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				2AC155332AD135E60010C087 /* ResultViewController.swift */,
 				2A01E2642AD12A58003FF38C /* LoginViewController.swift */,
+				2AC155332AD135E60010C087 /* ResultViewController.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
