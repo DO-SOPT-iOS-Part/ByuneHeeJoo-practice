@@ -22,6 +22,15 @@
 		2A3E2DF72AECEFE800FE6418 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E2DF62AECEFE800FE6418 /* ImageViewController.swift */; };
 		2A3E2DFB2AECF06D00FE6418 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E2DFA2AECF06D00FE6418 /* ImageCollectionViewCell.swift */; };
 		2A3E2DFD2AECF21E00FE6418 /* ImageCollectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E2DFC2AECF21E00FE6418 /* ImageCollectionData.swift */; };
+		2A5296842AFF57F900279401 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5296832AFF57F900279401 /* ViewController.swift */; };
+		2A5296862AFF582600279401 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5296852AFF582600279401 /* NetworkError.swift */; };
+		2A5296882AFF584100279401 /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5296872AFF584100279401 /* RegisterService.swift */; };
+		2A52968A2AFF585D00279401 /* RegisterRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5296892AFF585D00279401 /* RegisterRequestBody.swift */; };
+		2A52968C2AFF589400279401 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A52968B2AFF589400279401 /* InfoViewController.swift */; };
+		2A52968E2AFF591400279401 /* GetInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A52968D2AFF591400279401 /* GetInfoService.swift */; };
+		2A5296902AFF592700279401 /* UserInfoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A52968F2AFF592700279401 /* UserInfoDataModel.swift */; };
+		2A5296922AFF638300279401 /* CheckUserExist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5296912AFF638300279401 /* CheckUserExist.swift */; };
+		2A5296942AFF640800279401 /* CheckUserExistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5296932AFF640800279401 /* CheckUserExistService.swift */; };
 		2A5E993E2AD8E38F00DA55A1 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E993D2AD8E38F00DA55A1 /* UIImage+.swift */; };
 		2A5E99422AD90A5700DA55A1 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E99412AD90A5700DA55A1 /* UILabel+.swift */; };
 		2A5E994B2ADA5E7F00DA55A1 /* ChessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E994A2ADA5E7F00DA55A1 /* ChessViewController.swift */; };
@@ -47,6 +56,15 @@
 		2A3E2DF62AECEFE800FE6418 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		2A3E2DFA2AECF06D00FE6418 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		2A3E2DFC2AECF21E00FE6418 /* ImageCollectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionData.swift; sourceTree = "<group>"; };
+		2A5296832AFF57F900279401 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2A5296852AFF582600279401 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		2A5296872AFF584100279401 /* RegisterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
+		2A5296892AFF585D00279401 /* RegisterRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequestBody.swift; sourceTree = "<group>"; };
+		2A52968B2AFF589400279401 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		2A52968D2AFF591400279401 /* GetInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInfoService.swift; sourceTree = "<group>"; };
+		2A52968F2AFF592700279401 /* UserInfoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoDataModel.swift; sourceTree = "<group>"; };
+		2A5296912AFF638300279401 /* CheckUserExist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUserExist.swift; sourceTree = "<group>"; };
+		2A5296932AFF640800279401 /* CheckUserExistService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUserExistService.swift; sourceTree = "<group>"; };
 		2A5E993D2AD8E38F00DA55A1 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		2A5E99412AD90A5700DA55A1 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 		2A5E994A2ADA5E7F00DA55A1 /* ChessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +144,22 @@
 			path = CollectionView;
 			sourceTree = "<group>";
 		};
+		2A5296822AFF455200279401 /* FourthSeminar */ = {
+			isa = PBXGroup;
+			children = (
+				2A5296832AFF57F900279401 /* ViewController.swift */,
+				2A5296852AFF582600279401 /* NetworkError.swift */,
+				2A5296872AFF584100279401 /* RegisterService.swift */,
+				2A5296892AFF585D00279401 /* RegisterRequestBody.swift */,
+				2A52968B2AFF589400279401 /* InfoViewController.swift */,
+				2A52968F2AFF592700279401 /* UserInfoDataModel.swift */,
+				2A52968D2AFF591400279401 /* GetInfoService.swift */,
+				2A5296912AFF638300279401 /* CheckUserExist.swift */,
+				2A5296932AFF640800279401 /* CheckUserExistService.swift */,
+			);
+			path = FourthSeminar;
+			sourceTree = "<group>";
+		};
 		2A5E993C2AD8E38100DA55A1 /* Global */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +204,7 @@
 				2A5E99482ADA5BA900DA55A1 /* FirstSeminar */,
 				2A5E99492ADA5D8800DA55A1 /* SecondSeminar */,
 				2A3E2DE52AECCE1700FE6418 /* ThirdSeminar */,
+				2A5296822AFF455200279401 /* FourthSeminar */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -282,14 +317,22 @@
 				2A3E2DFB2AECF06D00FE6418 /* ImageCollectionViewCell.swift in Sources */,
 				2AC155362AD141EB0010C087 /* GetDataProtocol.swift in Sources */,
 				2A01E2652AD12A58003FF38C /* LoginViewController.swift in Sources */,
+				2A5296922AFF638300279401 /* CheckUserExist.swift in Sources */,
 				2A3E2DF32AECDE6D00FE6418 /* UIView+.swift in Sources */,
+				2A5296842AFF57F900279401 /* ViewController.swift in Sources */,
 				2A3E2DED2AECD19F00FE6418 /* TestViewController.swift in Sources */,
 				2A3E2DF72AECEFE800FE6418 /* ImageViewController.swift in Sources */,
 				2A5E994D2ADA6D5100DA55A1 /* CrossViewController.swift in Sources */,
+				2A52968A2AFF585D00279401 /* RegisterRequestBody.swift in Sources */,
 				2A01E2612AD12A58003FF38C /* AppDelegate.swift in Sources */,
+				2A5296862AFF582600279401 /* NetworkError.swift in Sources */,
 				2A5E993E2AD8E38F00DA55A1 /* UIImage+.swift in Sources */,
+				2A52968E2AFF591400279401 /* GetInfoService.swift in Sources */,
 				2A5E99422AD90A5700DA55A1 /* UILabel+.swift in Sources */,
+				2A5296902AFF592700279401 /* UserInfoDataModel.swift in Sources */,
+				2A5296882AFF584100279401 /* RegisterService.swift in Sources */,
 				2A3E2DEF2AECDC9500FE6418 /* TableViewController.swift in Sources */,
+				2A5296942AFF640800279401 /* CheckUserExistService.swift in Sources */,
 				2A01E2632AD12A58003FF38C /* SceneDelegate.swift in Sources */,
 				2A5E994F2ADA824200DA55A1 /* ScrollViewController.swift in Sources */,
 				2A3E2DFD2AECF21E00FE6418 /* ImageCollectionData.swift in Sources */,
@@ -297,6 +340,7 @@
 				2A3E2DF52AECDF8E00FE6418 /* ItemListData.swift in Sources */,
 				2A5E994B2ADA5E7F00DA55A1 /* ChessViewController.swift in Sources */,
 				2AC155342AD135E60010C087 /* ResultViewController.swift in Sources */,
+				2A52968C2AFF589400279401 /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
