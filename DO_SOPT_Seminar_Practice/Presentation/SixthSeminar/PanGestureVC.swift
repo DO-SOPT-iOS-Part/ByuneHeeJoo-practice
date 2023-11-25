@@ -12,7 +12,7 @@ import SnapKit
 import Then
 
 class PanGestureVC: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,7 +49,7 @@ class PanGestureVC: UIViewController {
         let changedX = imageView.center.x + transition.x
         let changedY = imageView.center.y + transition.y
         self.imageView.center = .init(x: changedX,
-                                     y: changedY)
+                                      y: changedY)
         self.lottieView.center = .init(x: changedX, y: changedY)
         sender.setTranslation(.zero, in: imageView)
         
@@ -71,5 +71,5 @@ class PanGestureVC: UIViewController {
                                              action: #selector(didImageViewMoved(_:)))
         $0.addGestureRecognizer(gesture)
     }
-
+    
 }
