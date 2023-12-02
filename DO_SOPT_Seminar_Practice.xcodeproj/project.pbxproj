@@ -12,6 +12,9 @@
 		2A01E2652AD12A58003FF38C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A01E2642AD12A58003FF38C /* LoginViewController.swift */; };
 		2A01E26A2AD12A59003FF38C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A01E2692AD12A59003FF38C /* Assets.xcassets */; };
 		2A01E26D2AD12A59003FF38C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A01E26B2AD12A59003FF38C /* LaunchScreen.storyboard */; };
+		2A2EAFFD2B1AFB7B002D3800 /* MVCPracticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2EAFFC2B1AFB7B002D3800 /* MVCPracticeVC.swift */; };
+		2A2EAFFF2B1AFB91002D3800 /* SoptMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2EAFFE2B1AFB91002D3800 /* SoptMember.swift */; };
+		2A2EB0012B1AFBBC002D3800 /* CustomTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2EB0002B1AFBBC002D3800 /* CustomTVC.swift */; };
 		2A3E2DE82AECCEF000FE6418 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3E2DE72AECCEF000FE6418 /* SnapKit */; };
 		2A3E2DEB2AECCEFC00FE6418 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3E2DEA2AECCEFC00FE6418 /* Then */; };
 		2A3E2DED2AECD19F00FE6418 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E2DEC2AECD19F00FE6418 /* TestViewController.swift */; };
@@ -52,6 +55,9 @@
 		2A01E2692AD12A59003FF38C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A01E26C2AD12A59003FF38C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A01E26E2AD12A59003FF38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A2EAFFC2B1AFB7B002D3800 /* MVCPracticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCPracticeVC.swift; sourceTree = "<group>"; };
+		2A2EAFFE2B1AFB91002D3800 /* SoptMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoptMember.swift; sourceTree = "<group>"; };
+		2A2EB0002B1AFBBC002D3800 /* CustomTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTVC.swift; sourceTree = "<group>"; };
 		2A3E2DEC2AECD19F00FE6418 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		2A3E2DEE2AECDC9500FE6418 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		2A3E2DF02AECDD0F00FE6418 /* ItemListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListTableViewCell.swift; sourceTree = "<group>"; };
@@ -120,6 +126,16 @@
 				2A01E26E2AD12A59003FF38C /* Info.plist */,
 			);
 			path = DO_SOPT_Seminar_Practice;
+			sourceTree = "<group>";
+		};
+		2A2EAFFB2B1AF64C002D3800 /* SeventhSeminar */ = {
+			isa = PBXGroup;
+			children = (
+				2A2EAFFC2B1AFB7B002D3800 /* MVCPracticeVC.swift */,
+				2A2EAFFE2B1AFB91002D3800 /* SoptMember.swift */,
+				2A2EB0002B1AFBBC002D3800 /* CustomTVC.swift */,
+			);
+			path = SeventhSeminar;
 			sourceTree = "<group>";
 		};
 		2A3E2DE52AECCE1700FE6418 /* ThirdSeminar */ = {
@@ -224,6 +240,7 @@
 				2A3E2DE52AECCE1700FE6418 /* ThirdSeminar */,
 				2A5296822AFF455200279401 /* FourthSeminar */,
 				2A4B0BAC2B119F220057BA2C /* SixthSeminar */,
+				2A2EAFFB2B1AF64C002D3800 /* SeventhSeminar */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -354,11 +371,14 @@
 				2A52968E2AFF591400279401 /* GetInfoService.swift in Sources */,
 				2A5E99422AD90A5700DA55A1 /* UILabel+.swift in Sources */,
 				2A5296902AFF592700279401 /* UserInfoDataModel.swift in Sources */,
+				2A2EB0012B1AFBBC002D3800 /* CustomTVC.swift in Sources */,
+				2A2EAFFD2B1AFB7B002D3800 /* MVCPracticeVC.swift in Sources */,
 				2A5296882AFF584100279401 /* RegisterService.swift in Sources */,
 				2A3E2DEF2AECDC9500FE6418 /* TableViewController.swift in Sources */,
 				2A5296942AFF640800279401 /* CheckUserExistService.swift in Sources */,
 				2A01E2632AD12A58003FF38C /* SceneDelegate.swift in Sources */,
 				2A5E994F2ADA824200DA55A1 /* ScrollViewController.swift in Sources */,
+				2A2EAFFF2B1AFB91002D3800 /* SoptMember.swift in Sources */,
 				2A3E2DFD2AECF21E00FE6418 /* ImageCollectionData.swift in Sources */,
 				2A3E2DF12AECDD0F00FE6418 /* ItemListTableViewCell.swift in Sources */,
 				2A3E2DF52AECDF8E00FE6418 /* ItemListData.swift in Sources */,
