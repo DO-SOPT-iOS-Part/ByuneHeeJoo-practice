@@ -11,7 +11,9 @@ import SnapKit
 import Then
 
 class MVVMPracticeVC: UIViewController {
+    
     var viewModel = MVVMPracticeViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setLayout()
@@ -35,12 +37,14 @@ class MVVMPracticeVC: UIViewController {
     
     private func bindViewModel() {
         self.tableView.dataSource = viewModel
+        self.viewModel.soptModel.bind { [weak self] _ in
+            guard let self else { return }
+            self.tableView.reloadData()
+        }
     }
     
     @objc private func randomButtonTap() {
-        if viewModel.randomButtonTap() {
-            self.tableView.reloadData()
-        }
+        viewModel.randomButtonTap()
     }
     
     private lazy var randomButton = UIButton().then {
